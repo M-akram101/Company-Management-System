@@ -1,0 +1,438 @@
+{
+	"info": {
+		"_postman_id": "deb9fa12-200c-4bbb-9318-c79db867ce4f",
+		"name": "Company-Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38511182",
+		"_collection_link": "https://nimbusalt.postman.co/workspace/NimbusAlt-Workspace~8fda6ea6-35f2-47d6-8337-53702d8f2693/collection/38511182-deb9fa12-200c-4bbb-9318-c79db867ce4f?action=share&source=collection_link&creator=38511182"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "usr",
+									"value": "moakramhashem@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pwd",
+									"value": "dankndrip",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://company.localhost:8000/api/method/login",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"method",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Get-All-Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Employee",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create-Employee",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get-by-Employee-id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-Employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Employee/rtpl39anqu",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Employee",
+								"rtpl39anqu"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Create-Company",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"company_name\":\"Brainwise\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Company",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-All-Companies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Company",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-company",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Company/Brainwise",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Company",
+								"Brainwise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-By-Company-Name",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "Create-Department",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"department_name\":\"HR\",\n    \"company\":\"brainwise\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Department",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-All-Departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Department",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-by-Department-name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Department/HR",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Department",
+								"HR"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-department",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Department/HR",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Department",
+								"HR"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "Create-Project",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Project",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Project"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-All-Projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Project",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Project"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-by-project-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Project",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Project"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update-Project",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Project",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Project"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-Project",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://company.localhost:8000/api/resource/Project",
+							"protocol": "http",
+							"host": [
+								"company",
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"resource",
+								"Project"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project Employees",
+			"item": [],
+			"description": "A table joining between Project table and Employee, linked to assigned-employees field in project."
+		}
+	]
+}

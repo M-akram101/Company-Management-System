@@ -1,3 +1,30 @@
+## Things Accomplished
+
+Designed the database on draw.io
+Chose to integrate it using Frappe
+
+Flow of Implementation:
+
+1. Installed frappe, created a site for company
+2. Added the tables with the suitable datatypes, and linked successfully. (On the UI)
+3. Created server scripts for auto calculate, and customizable scripts for hired on
+4. Created roles (Employee, User), added permissions for both.
+5. Chosen the name field as the default name for 4 main tables for easy acces when selecting.
+6. Tested main tables in postman, and working well, will attach postman file
+7. added workflow for Employee Performance Cycle, and added a script that would update status based on certain changes but didnt test well.
+
+## Things Not done
+
+1. Test Employee Performance Cycle workflow
+2. didnt run unit/Integration Test
+3. Logging
+
+## Attached files to test
+
+1. pip install the requirements.txt to test it easily
+2. json file added to main folder, import on postman and you'll find data ready
+3. screenshots available in the folder, some snippets from frappe
+
 # Company-Management-System
 
 A Company Management System that is implemented using Frappe.
@@ -81,15 +108,3 @@ bench start
     •	Attach → file upload (any type).
     •	Attach Image → image upload only.
     •	Password → masked field.
-
-## Things Accomplished
-
-Designed the database on draw.io
-
-1. Installed frappe, created a site for company
-2. Added the tables with the suitable datatypes, and linked successfully. (On the UI)
-3. Created server scripts for auto calculate, and customizable scripts for hired on
-4. Created roles (Employee, User), added permissions for both.
-5. Chosen the name field as the default name for 4 main tables for easy acces when selecting.
-6. Tested main tables in postman, and working well, will attach postman file
-7. added workflow for Employee Performance Cycle, and added a script that would update status based on certain changes but didnt test well.
